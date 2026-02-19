@@ -9,7 +9,7 @@ data = {
     "last_updated": datetime.utcnow().isoformat()
 }
 
-with open("data/last_updated.json", "w") as f:
+with open("data/last-updated.json", "w") as f:
     json.dump(data, f, indent=2)
 
 print("Updated datetime")
