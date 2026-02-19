@@ -12,3 +12,5 @@ data = {
 with open("data/last_updated.json", "w") as f:
     json.dump(data, f, indent=2)
 
+print("Updated datetime")
+
