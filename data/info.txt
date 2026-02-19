@@ -1,0 +1,1 @@
+All JSON output files stored here to be read by frontend.
