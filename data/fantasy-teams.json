@@ -1,0 +1,158 @@
+{
+    "fantasy_teams": [
+      {
+        "name": "Team Arjun",
+        "players": [
+          "Virat Kohli",
+          "Quinton de Kock",
+          "Kamindu Mendis",
+          "Sai Sudharsan",
+          "Karun Nair",
+          "Glenn Phillips",
+          "Harshit Rana",
+          "Mitchell Santner",
+          "Arshdeep Singh",
+          "Jasprit Bumrah",
+          "Bhuvneshwar Kumar",
+          "Rachin Ravindra"
+        ]
+      },
+      {
+        "name": "Team Atharva",
+        "players": [
+          "Rohit Sharma",
+          "Devon Conway",
+          "Rajat Patidar",
+          "Rahul Tripathi",
+          "KL Rahul",
+          "Ramandeep Singh",
+          "Axar Patel",
+          "Rashid Khan",
+          "Varun Chakaravarthy",
+          "Wanindu Hasaranga",
+          "Mohammed Shami",
+          "Avesh Khan"
+        ]
+      },
+      {
+        "name": "Team Sahithi/Sahil",
+        "players": [
+          "Ruturaj Gaikwad",
+          "Jake Fraser-McGurk/Mustafizur Rahman",
+          "Shreyas Iyer",
+          "Ishan Kishan",
+          "Deepak Hooda",
+          "Priyansh Arya",
+          "Sam Curran",
+          "Rahul Chahar",
+          "Josh Hazlewood",
+          "Lockie Ferguson/Kyle Jamieson",
+          "T Natarajan",
+          "Shimron Hetmyer",
+          "Ayush Mhatre"
+        ]
+      },
+      {
+        "name": "Team Shajin",
+        "players": [
+          "Sanju Samson",
+          "Faf du Plessis",
+          "Suryakumar Yadav",
+          "Tilak Varma",
+          "Tim David",
+          "Liam Livingstone",
+          "Andre Russell",
+          "Krunal Pandya",
+          "Sandeep Sharma",
+          "Ravi Bishnoi",
+          "Deepak Chahar",
+          "Khaleel Ahmed"
+        ]
+      },
+      {
+        "name": "Team Sarthak",
+        "players": [
+          "Shubman Gill",
+          "Yashasvi Jaiswal",
+          "Jitesh Sharma",
+          "Nicholas Pooran",
+          "Marcus Stoinis",
+          "Rinku Singh",
+          "Washington Sundar",
+          "Mukesh Kumar",
+          "Anrich Nortje",
+          "Kuldeep Yadav",
+          "Matheesha Pathirana",
+          "Marco Jansen"
+        ]
+      },
+      {
+        "name": "Team Aviral",
+        "players": [
+          "Mitchell Marsh",
+          "Prabhsimran Singh",
+          "Ajinkya Rahane",
+          "Heinrich Klaasen",
+          "Naman Dhir",
+          "Dhruv Jurel",
+          "Ravindra Jadeja",
+          "Ravichandran Ashwin",
+          "Kagiso Rabada",
+          "Mitchell Starc",
+          "Pat Cummins",
+          "Shahrukh Khan"
+        ]
+      },
+      {
+        "name": "Team Bhagya/Mandal",
+        "players": [
+          "Venkatesh Iyer",
+          "Jos Buttler/Kusal Mendis",
+          "Nitish Rana",
+          "Riyan Parag",
+          "Ashutosh Sharma",
+          "Shivam Dube",
+          "Glenn Maxwell/Mitchell Owen",
+          "Prasidh Krishna",
+          "Noor Ahmad",
+          "Yuzvendra Chahal",
+          "Trent Boult",
+          "Aiden Markram"
+        ]
+      },
+      {
+        "name": "Team PG",
+        "players": [
+          "Sunil Narine",
+          "Will Jacks/Jonny Bairstow",
+          "Shashank Singh",
+          "Tristan Stubbs",
+          "Rishabh Pant",
+          "David Miller",
+          "Hardik Pandya",
+          "Mohit Sharma",
+          "Harpreet Brar",
+          "Mohammed Siraj",
+          "Harshal Patel",
+          "Adam Zampa/Harsh Dubey"
+        ]
+      },
+      {
+        "name": "Team Broman",
+        "players": [
+          "Travis Head",
+          "Abhishek Sharma",
+          "Nehal Wadhera",
+          "Manish Pandey",
+          "Abdul Samad",
+          "MS Dhoni",
+          "Nitish Kumar Reddy",
+          "Rahul Tewatia",
+          "Maheesh Theekshana",
+          "Lungi Ngidi",
+          "Jofra Archer",
+          "Philip Salt"
+        ]
+      }
+    ]
+  }
