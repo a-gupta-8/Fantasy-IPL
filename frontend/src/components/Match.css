@@ -22,17 +22,18 @@
     background: linear-gradient(
         to right,
         var(--left-color) 0%,
-        white 40%,
-        white 60%,
+        white 45%,
+        white 55%,
         var(--right-color) 100%
     );
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: space-between;
     flex-direction: row;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 4px;
+    position: relative;
 }
 
 
@@ -53,4 +54,82 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+}
+
+.team-name {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    /* font-size: 15px; */
+}
+
+.vs {
+    padding-top: 3px;
+    padding-left: 5px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100; 
+}
+
+.match-live {
+    position: absolute;
+    top: 55px;            /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    font-size: 7px;
+    color: #34C759;
+    letter-spacing: 0.5px;
+
+    padding: 4px 5px;
+
+    border: 1px solid #34C759;
+    border-radius: 3px;
+
+    display: flex;              /* ADD THIS */
+    align-items: center;        /* ADD THIS */
+    gap: 4px;                   /* spacing between dot & text */
+
+}
+
+.live-text {
+    margin: 0;
+}
+
+.live-blinker {
+    width: 5px;
+    height: 5px;
+    background-color: #34C759;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+    padding-top: 1px;
+}
+
+/* Blinking animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    30% { opacity: 1; }
+    50% { opacity: 0; }
+    70% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+.match-dated {
+    position: absolute;
+    top: 55px;            /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    font-size: 7px;
+    letter-spacing: 0.5px;
+
+    padding: 4px 5px;
+
+    display: flex;
+    align-items: center;
+
 }
