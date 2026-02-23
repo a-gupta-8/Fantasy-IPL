@@ -1,0 +1,61 @@
+.match-card {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    border-radius: 12px;
+    overflow: hidden;
+  
+    /* THE MAGIC */
+    background: linear-gradient(
+      to right,
+      #4b0082 0%,       /* deep purple */
+      #7a52a0 20%,      /* lighter purple */
+      #ffffff 45%,      /* center white */
+      #ffffff 55%,      /* center white */
+      #f5d04c 80%,      /* soft yellow */
+      #ffcc00 100%      /* strong yellow */
+    );
+  }
+  
+  .team img {
+    height: 160px;
+    object-fit: contain;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .score {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .score h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .score p {
+    margin: 4px 0 0 0;
+    color: #555;
+  }
+  
+  .vs {
+    font-size: 24px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .live {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    border-radius: 8px;
+    font-weight: 600;
+  }
