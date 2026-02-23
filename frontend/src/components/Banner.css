@@ -26,7 +26,8 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     padding-bottom: 10px; 
-    padding-top: 0;        
+    padding-top: 0;
+    border: none;
 }
 
 .banner-h3-text {
