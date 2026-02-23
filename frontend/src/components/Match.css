@@ -1,61 +1,56 @@
-.match-card {
-    height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
-    border-radius: 12px;
-    overflow: hidden;
-  
-    /* THE MAGIC */
-    background: linear-gradient(
-      to right,
-      #4b0082 0%,       /* deep purple */
-      #7a52a0 20%,      /* lighter purple */
-      #ffffff 45%,      /* center white */
-      #ffffff 55%,      /* center white */
-      #f5d04c 80%,      /* soft yellow */
-      #ffcc00 100%      /* strong yellow */
-    );
-  }
-  
-  .team img {
-    height: 160px;
-    object-fit: contain;
-  }
-  
-  .center {
+.matches {
+    width: 100%;
+    display: flex;              /* helps position image */
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
     text-align: center;
-  }
-  
-  .score {
+    padding: 5px 0;            /* space top & bottom */
+    flex-direction: column;    
+}
+
+
+.match-title-text {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.matchup-label {
     display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .score h1 {
-    font-size: 40px;
-    margin: 0;
-  }
-  
-  .score p {
-    margin: 4px 0 0 0;
-    color: #555;
-  }
-  
-  .vs {
-    font-size: 24px;
-    font-weight: 500;
-    color: #444;
-  }
-  
-  .live {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 8px 20px;
-    border: 2px solid #22c55e;
-    color: #22c55e;
-    border-radius: 8px;
-    font-weight: 600;
-  }
+    width: 80%;
+    margin: 0 auto;   
+    background: linear-gradient(
+        to right,
+        var(--left-color) 0%,
+        white 40%,
+        white 60%,
+        var(--right-color) 100%
+    );
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+}
+
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+
+.team1-logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+.team2-logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}

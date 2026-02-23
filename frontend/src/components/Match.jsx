@@ -1,37 +1,29 @@
-import Box from "@mui/material/Box";
-import logo from "../../public/CSK_Logo.png"
-import cskBanner from "../../public/CSK_Banner.jpg";
-import miBanner from "../../public/MI_Banner.png";
+import upcoming_matches from "../../../data/match_schedule/upcoming_matches.json"
 import "./Match.css"
+import { teams } from "./Teams"
 
 export default function Matches() {
+  const today = new Date();
+  const localToday = today.getFullYear() + "-" + String(today.getMonth() + 1).padStart(2, "0") + "-" + String(today.getDate()).padStart(2, "0");
+
+  const firstMatch = upcoming_matches[0];
+  const headingText = firstMatch.date === localToday ? "TODAY" : "UPCOMING";
+
+  const [team1FullName, team2FullName] = firstMatch.name.split(" vs ");
+
+  const team1 = teams[team1FullName];
+  const team2 = teams[team2FullName];
+
   return (
-      <div className="match-card">
-        <div className="team left">
-          <img src={miBanner} alt="KKR" />
-        </div>
-  
-        <div className="center">
-          <div className="score">
-            <div>
-              <h1>210/4</h1>
-              <p>(20.0 overs)</p>
-            </div>
-  
-            <div className="vs">v/s</div>
-  
-            <div>
-              <h1>190/8</h1>
-              <p>(18.2 overs)</p>
-            </div>
+      <>
+        <div class="matches">
+          <h4 class="match-title-text">{headingText}</h4>
+          <div class="matchup-label" style={{"--left-color": team1.colorCode, "--right-color": team2.colorCode}}>
+            <img class="team1-logo logo" src={team1.logo} alt={team1.short} />
+            <span>v/s</span>
+            <img class="team2-logo logo" src={team2.logo} alt={team2.short} />
           </div>
-  
-          <div className="live">LIVE</div>
         </div>
-  
-        <div className="team right">
-          <img src={cskBanner} alt="CSK" />
-        </div>
-      </div>
+      </>
   );
 }
