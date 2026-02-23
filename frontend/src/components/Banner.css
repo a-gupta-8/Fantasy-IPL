@@ -4,37 +4,32 @@ html, body {
     overflow-x: hidden;
   }
   
+
 .banner {
     width: 100%;
     background-color: #19398A;
     display: flex;              /* helps position image */
     justify-content: center;    /* center horizontally */
-    align-items: flex-start;        /* center vertically */
+    align-items: center;        /* center vertically */
+    text-align: center;
     padding: 5px 0;            /* space top & bottom */
+    flex-direction: column;
 }
   
+
 .banner-image {
     height: 30px;   /* control image size */
     width: auto;    /* keep aspect ratio */
     max-width: 100%;
+    margin-bottom: 8px;
 }
 
-.banner-text {
-    width: 100%;
-    background-color: #19398A;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 10px; 
-    padding-top: 0;
-    border: none;
-}
 
 .banner-h3-text {
     color: white;
     font-family: 'Exo 2', sans-serif;
     font-size: 15px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 6px;
     line-height: 1.0;
 }
