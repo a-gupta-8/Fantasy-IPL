@@ -13,6 +13,7 @@
     font-family: 'Exo 2', sans-serif;
     font-size: 15px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .matchup-label {
@@ -78,7 +79,7 @@
 
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
-    font-size: 7px;
+    font-size: 10px;
     color: #34C759;
     letter-spacing: 0.5px;
 
@@ -117,19 +118,88 @@
 
 .match-dated {
     position: absolute;
-    top: 55px;            /* adjust as needed */
+    top: 50px;            /* adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
 
     font-family: 'Exo 2', sans-serif;
-    font-weight: 200;
-    font-size: 7px;
+    font-weight: 400;
+    font-size: 10px;
     letter-spacing: 0.5px;
 
     padding: 4px 5px;
 
     display: flex;
     align-items: center;
+    flex-direction: column;
 
+}
+
+.upcoming-match-label {
+    display: flex;
+    width: 60%;
+    margin: 8px auto 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.team3-logo {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    z-index: 10; 
+}
+
+
+.team4-logo {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    z-index: 10;
+}
+
+.upcoming-date {
+    position: absolute;
+    left: 50px;   /* adjust based on logo width */
+    right: 40px;  /* adjust based on logo width */
+    height: 40px;
+    background-color: #f2f2f7;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    font-size: 10px;
+    font-family: 'Exo 2', sans-serif;
+    flex-direction: column;
+}
+
+.nextmatch-date {
+    margin-top: 11px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.nextmatch-time {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 200;
+}
+
+.live-datetime {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    font-weight: 200;
+    font-size: 8px;
 }
