@@ -57,12 +57,12 @@ def get_selected_matches(schedule_path="data/match_schedule/match_schedule.json"
     # ---- STEP 2: If all today's matches ended ----
     future_matches.sort(key=lambda x: x[1])
 
-    for m in future_matches[:2]:
+    for m, local_start_time in future_matches[:2]:
         match_info = {
-            "id": m[0]["id"],
-            "name": m[0]["name"].split(",")[0],
-            "date": m[0]["date"],
-            "dateTime": m[0]["dateTimeGMT"],
+            "id": m["id"],
+            "name": m["name"].split(",")[0],
+            "date": local_start_time.strftime("%Y-%m-%d"),
+            "dateTime": local_start_time.strftime("%Y-%m-%dT%H:%M:%S"),
             "is_live": False
         }
         selected.append(match_info)
