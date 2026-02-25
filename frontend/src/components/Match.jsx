@@ -47,7 +47,7 @@ export default function Matches() {
         {firstMatch && <div class="matches">
           <h4 class="match-title-text">{headingText}</h4>
           <div class="matchup-label" style={{"--left-color": team1.colorCode, "--right-color": team2.colorCode}}>
-            <img class="team1-logo logo" src={team1.logo} alt={team1.name} />
+            <img class="team1-logo logo" src={team1.name === "RR" ? team1.logo[1] : team1.logo} alt={team1.name} />
             <h3 class="team-name">{team1.name}</h3>
             <p class="vs">v/s</p>
             {isLive ? (<div class="match-live">
@@ -60,15 +60,15 @@ export default function Matches() {
               </div>
             ) }
             <h3 class="team-name">{team2.name}</h3>
-            <img class="team2-logo logo" src={team2.logo} alt={team2.name} />
+            <img class="team2-logo logo" src={team2.name === "RR" ? team2.logo[1] : team1.logo} alt={team2.name} />
           </div>
           { nextMatch && <div class="upcoming-match-label">
-            <img class="team3-logo logo" src={team3.logo}></img>
+            <img class="team3-logo logo" src={team3.name === "RR" ? team3.logo[0] : team3.logo}></img>
             <div className="upcoming-date">
               <p class="nextmatch-date">{formatDate(nextMatch.date)}</p>
               <p class="nextmatch-time">{formatTime(nextMatch.dateTime)}</p>
             </div>
-            <img class="team4-logo logo" src={team4.logo}></img>
+            <img class="team4-logo logo" src={team4.name === "RR" ? team4.logo[0] : team4.logo}></img>
           </div> }
         </div>}
       </>

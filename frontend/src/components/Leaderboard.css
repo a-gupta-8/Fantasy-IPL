@@ -1,0 +1,47 @@
+.leaderboard {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leaderboard-header {
+    display: flex;
+    background-color: #19398A;
+    color: white;
+
+    width: 90%;
+    
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    font-family: 'Exo 2', sans-serif;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.leaderboard-title {
+    font-size: 10px;
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.total-title,
+.pts-today-title {
+    font-size:  8px;
+    text-align: right;
+    margin-left: 30px;
+}
+
+.position-change-title {
+    font-size: 8px;
+    text-align: right;
+    margin-left: 25px;
+    margin-right: 15px;
+}

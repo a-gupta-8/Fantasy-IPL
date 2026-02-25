@@ -38,7 +38,7 @@ export const teams = {
   },
   "Rajasthan Royals": {
     name: "RR",
-    logo: {rrPinkLogo, rrWhiteLogo},
+    logo: [rrPinkLogo, rrWhiteLogo],
     colorCode: "#EA1B85"
   },
   "Sunrisers Hyderabad": {

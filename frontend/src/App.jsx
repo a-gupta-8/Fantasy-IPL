@@ -1,5 +1,6 @@
 import Banner from "./components/Banner"
 import Matches from "./components/Match"
+import Leaderboard from "./components/Leaderboard"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Banner />
       <Matches />
+      <Leaderboard />
     </>
   )
 }

@@ -1,16 +1,16 @@
 [
     {
         "id": "d5915da0-c08b-4122-bcb0-2c2e1e6e168a",
-        "name": "Kolkata Knight Riders vs Sunrisers Hyderabad",
+        "name": "Rajasthan Royals vs Rajasthan Royals",
         "date": "2026-02-24",
         "dateTime": "2026-02-24T21:30:00",
         "is_live": false
     },
     {
         "id": "208d68e5-3fab-4f3b-88e9-29ec4a02d3e2",
-        "name": "Chennai Super Kings vs Mumbai Indians",
-        "date": "2026-02-27",
-        "dateTime": "2026-02-27T10:30:00",
+        "name": "Rajasthan Royals vs Rajasthan Royals",
+        "date": "2026-02-26",
+        "dateTime": "2026-02-26T23:30:00",
         "is_live": false
     }
 ]
