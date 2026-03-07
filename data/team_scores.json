@@ -1,0 +1,40 @@
+{
+    "teams": [
+        {
+            "team_name": "Team Aviral",
+            "total_points": 5877
+        },
+        {
+            "team_name": "Team Bhagya/Mandal",
+            "total_points": 5704
+        },
+        {
+            "team_name": "Team Sarthak",
+            "total_points": 5253
+        },
+        {
+            "team_name": "Team Arjun",
+            "total_points": 5076
+        },
+        {
+            "team_name": "Team PG",
+            "total_points": 4653
+        },
+        {
+            "team_name": "Team Shajin",
+            "total_points": 4564
+        },
+        {
+            "team_name": "Team Sahithi/Sahil",
+            "total_points": 4202
+        },
+        {
+            "team_name": "Team Atharva",
+            "total_points": 4034
+        },
+        {
+            "team_name": "Team Broman",
+            "total_points": 4008
+        }
+    ]
+}

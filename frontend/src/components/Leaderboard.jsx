@@ -1,7 +1,13 @@
 import "./Leaderboard.css"
 import LeaderboardRecord from "./LeaderboardRecord.jsx";
+import teamScores from "../../../data/team_scores.json";
 
 export default function Leaderboard() {
+
+    const sortedTeams = [...teamScores.teams].sort(
+        (a, b) => b.total_points - a.total_points
+    );
+
     return (
         <div class="leaderboard">
             <div class="leaderboard-header">
@@ -10,11 +16,16 @@ export default function Leaderboard() {
                 <div class="pts-today-title">Pts. Today</div>
                 <div class="position-change-title"># gain/lost</div>
             </div>
-            <LeaderboardRecord name="Aviral" total={5600} today={0} change={0} rank={1} />
-            <LeaderboardRecord name="Sayani x Bhagya" total={5300} today={0} change={0} rank={2} />
-            <LeaderboardRecord name="Sarthak" total={4900} today={0} change={0} rank={3} />
-            <LeaderboardRecord name="Shajin" total={4700} today={0} change={0} rank={4} />
-            <LeaderboardRecord name="Arjun" total={4400} today={0} change={0} rank={5} />
+            {sortedTeams.map((team, index) => (
+                <LeaderboardRecord
+                    key={team.team_name}
+                    name={team.team_name}
+                    total={team.total_points}
+                    today={0}
+                    change={0}
+                    rank={index + 1}
+                />
+            ))}
         </div>
     );
 }
